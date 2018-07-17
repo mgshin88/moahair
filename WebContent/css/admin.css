@@ -1,0 +1,128 @@
+.addbackground {
+	background-color : #58D68D;
+}
+
+#view1 {
+	width : 90%;
+	margin : 0px auto;
+}
+
+.userAddBtn {
+	float : right;
+	padding : 20px 0;
+}
+
+.searchBox {
+	text-align : center;
+	padding-top : 30px;
+}
+
+.adminContent {
+	width : 1180px;
+	overflow : hidden;
+	margin : 0px auto;
+}
+
+.tabAdmin {
+	overflow : hidden;
+	margin-bottom : 30px;
+	width : 90%;
+	display: table;
+	margin : 0 auto;
+}
+
+.tabAdmin span {
+	display : table-cell;
+	width : 20%;
+	border : 1px solid #999;
+	color : #000000;
+	text-align : center;
+	padding : 10px 0px;
+	border-radius : 10px 10px 0 0;
+	font-size : 14px;
+	cursor : pointer;
+}
+
+.adminHover:hover {
+	background-color : #58D68D;
+	color : #ffffff;
+}
+
+.totalInfo {
+	width : 40%;
+	margin : 0px auto;
+	display : table;
+}
+
+.totalday {
+	width : 50%;
+	text-align : center;
+	display : table-cell;
+}
+
+.totalButton {
+	width : 40%;
+	text-align : center;
+	margin : 0 auto;
+	padding-top : 20px;
+}
+
+#sellerRank1 {
+	font-size : 20px;
+	font-weight : 600;
+	background-color : #eeeeee;
+} 
+
+.profitView {
+	text-align : center;
+}
+
+.profitSpan {
+	font-size : 24px;
+	font-weight : 600;
+	padding : 10px 10px;
+}
+
+.mainMove {
+	width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    padding-bottom : 10px;
+}
+
+/* Admin Button */
+.AddBtn {
+	background: #58D68D;
+    width: 100px;
+    margin: 1%;
+    display: block;
+    padding: 10px 0px;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sellertotalbtn {
+	background: #58D68D;
+    width: 45%;
+    margin: 1%;
+    padding: 10px 0px;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pagePrev {
+	width: 50px;
+    font-size: 16px;
+    border-radius: 30px 0px 0px 30px;
+    background-color: white;
+}
+
+.pageNext {
+	width: 50px;
+    font-size: 16px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: white;
+	
+}

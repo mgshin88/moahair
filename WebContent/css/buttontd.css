@@ -1,0 +1,32 @@
+.buttontd {
+    border: 1px solid black;
+    width: 600px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #ffffff
+    color: #000000;
+}
+.buttontd2 {
+	border: 1px solid black;
+    width: 600px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+	
+}
+
+#pur {
+  width: 100%;
+  height: 100%;
+  margin: 100px auto;
+
+}
+#purbutton {
+	border: 1px solid black;
+    width: 200px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 5px;
+   
+}

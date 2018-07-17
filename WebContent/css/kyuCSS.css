@@ -1,0 +1,981 @@
+body {
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+label {
+	display: block;
+}
+
+/* kyuCSS 공용 */
+.content {
+	width: 100%;
+}
+
+.MenuHover:hover {
+	color : #a1a1a1;
+}
+
+
+/* ProductView.jsp */
+.titleItem {
+	font-weight: bold;
+	font-size: 2.0em;
+}
+
+.priceItem {
+	font-weight: bold;
+	font-size: 1.5em;
+	color : gray;
+}
+
+.containerItemDetail {
+	width : 1180px;
+	margin: auto;
+	display: table;
+}
+
+.ImgItemDetail {
+	display: table-cell;
+	width: 50%;
+	padding: 2%;
+}
+
+.infoItemDetail {
+	width: 50%;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.infoItemDetail li {
+	list-style: none;
+	padding: 10px;
+}
+
+.infoItemDetail .priceItem {
+	border-bottom: 1px solid black;
+}
+
+.labelOption {
+	padding: 5px 10px;
+}
+
+.productAddOptionMain {
+	width: 100%;
+	display: table;
+}
+
+.productAddOption {
+	width: 50%;
+	display: table-cell;
+}
+
+a:visited {
+	color : #515151;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration : none;
+}
+
+.btnFavorItem {
+	border: 1px solid #666;
+	width: 47.5%;
+	margin: 1%;
+	display: block;
+	text-align: center;
+	padding: 10px 0px;
+	color: #000;
+	float: left;
+	cursor : pointer;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fared {
+	color : red;
+}
+
+.btnCartItem {
+	border: 1px solid #666;
+	width: 47.5%;
+	margin: 1%;
+	display: block;
+	text-align: center;
+	padding: 10px 0px;
+	color: #000;
+	float: left;
+	cursor : pointer;
+}
+
+.pointerCursor {
+	cursor : pointer;
+}
+
+.btnBuyItem {
+	clear: both;
+	background: #58D68D;
+	width: 98%;
+	margin: 1%;
+	display: block;
+	text-align: center;
+	padding: 10px 0px;
+	color: #fff !important;
+	cursor : pointer;
+}
+
+.marketInfo {
+	padding: 20px 0px;
+	border-top: 1px solid #ccc;
+	margin: 3%;
+	width: 94%;
+}
+
+#marketImg {
+	border-radius: 100%;
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+#productThumnail {
+	width: 540px;
+	height : 540px;
+}
+
+.marketName {
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.marketContent {
+	padding: 7px 0px;
+}
+
+.containerDesignerDetail {
+	width : 1180px;
+	margin : auto;
+	display : table;
+}
+
+.containerDesignerwidth {
+	width : 25%;
+	text-align : center;
+	display : inline-block;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	vertical-align : top;
+}
+
+.containerDesignerProduce {
+	width : 1180px;
+	text-align : center;
+}
+
+.float {
+	border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.clear {
+	clear : both;
+}
+
+.DesignerText {
+	font-size : 2.0em;
+}
+
+.contentNameDetail {
+	width : 1180px;
+	margin : auto;
+	text-align : center;
+	padding-top : 50px;
+}
+
+.ProductViewTop, .QnAViewTop {
+	font-size : 2.0em;
+}
+
+.ProductViewContent {
+	padding-top : 50px;
+}
+
+#contentQnADetail {
+	display : none;
+}
+
+.ProductViewTop, .QnAViewTop {
+	cursor : pointer;
+	color : #515151;
+	padding : 10px 35px;
+	letter-spacing : 3px;
+}
+
+/* SellerView.jsp */
+.contentSellerBanner {
+	width : 1350px;
+	margin : auto;
+	text-align : center;
+	background-size: 100%;
+}
+
+.Sellerbg_bk .btnSellerProfile span {
+	border : 1px solid #fff;
+	color : #fff;
+}
+
+.Designerbg_bk .btnSellerProfile span {
+	border : 1px solid #fff;
+	color : #fff;	
+}
+
+.btnSellerProfile span {
+	padding : 5px 80px;
+	margin : 10px 2px;
+}
+
+.Sellerthumbnail {
+	width : 100px;
+	height : 100px;
+	border-radius: 100%;
+}
+
+.nameSellerProfile {
+	font-size : 28px;
+	letter-spacing : 6px;
+	padding : 10px 0px 0px 0px;
+}
+
+.btnSellerProfile {
+	padding : 20px 0px 0px 0px;
+}
+
+.addressSellerProfile {
+	padding : 25px 0px 20px 0px;
+	font-size : 20px;
+}
+
+.holidayAndopenclose {
+	font-size : 18px;
+}
+
+.s_holidayAndopenclose {
+	padding : 25px 0px 20px 0px;
+	font-size : 18px;
+}
+
+.s_title {
+	font-size : 20px;
+	letter-spacing : 2px;
+}
+
+.contentSellerItem {
+	width : 1350px;
+	margin : auto;
+	display : table;
+}
+
+.contentDesignerView {
+	width : 1350px;
+	margin : auto;
+	display : none;
+	
+}
+
+.contentDetail {
+	width : 1350px;
+	margin : auto;
+	display : table;
+	text-align : center;
+	font-size : 18px;
+	padding : 20px 0px;
+	border-bottom : 1px solid #ccc;
+}
+
+.SellerItem, .SellerDesigner {
+	cursor : pointer;
+	color : #515151;
+	padding : 10px 35px;
+	letter-spacing : 3px;
+}
+
+.containerItemwidth { 
+	width : 20%;
+	text-align : center;
+	display : inline-block;
+	padding-top : 40px;
+	vertical-align : top;
+}
+
+.sellerfloat {
+	width : 260px;
+	height : 260px;
+}
+
+
+/* 로그인, 회원가입, 마이페이지 */
+.logregHeader {
+	box-sizing : border-box;
+}
+
+.logregHeader .logregTitle {
+	font-weight : 400;
+	margin : 60px 0 30px 0;
+	font-size : 22px;
+	letter-spacing : 0;
+}
+
+.logregTitle {
+	text-align : center;
+}
+
+.logregFormView {
+	width : 760px;
+	padding : 0px;
+	margin : 0 auto 10px auto;
+	border-bottom : 1px solid #E1E1E1;
+	font-size : 12px;
+}
+
+.simpleForm ul {
+	list-style : none;
+	padding : 0;
+	margin : 1.5em 0;
+}
+
+.simpleForm #rg_id {
+	width : 80%;
+}
+
+.simpleForm #si_email {
+	width : 80%;
+}
+
+.simpleForm #rg_confirm {
+	width : 19.4%;
+}
+
+.simpleForm #search_sub {
+	width : 19.4%;
+}
+
+.simpleForm input[type=text] {
+	margin : 5px 0;
+	width : 100%;
+	height : 60px;
+	padding : 3px 20px;
+	border-radius : 5px;
+	border : 1px solid #D3D3D3;
+	box-sizing : border-box;
+}
+
+.simpleForm input[type=password] {
+	margin : 5px 0;
+	width : 100%;
+	height : 60px;
+	padding : 3px 20px;
+	border-radius : 5px;
+	border : 1px solid #D3D3D3;
+	box-sizing : border-box;
+}
+
+.marginTop15 {
+	margin-top : 15px;
+}
+
+.simpleForm .btnBlack {
+	background : #58D68D;
+	padding : 1.2em 0px;
+	color : #fff;
+	border : 2px solid #000;
+}
+
+.simpleForm input[type=submit] {
+	padding : 1.3em 0px;
+	width : 100%;
+	border-radius : 5px;
+	border : none;
+	color : #fff;
+	font-weight : 400;
+	cursor : pointer;
+}
+
+.simpleForm input[type=button] {
+	width : 100%;
+	border-radius : 5px;
+	font-weight : 400;
+	margin : 5px 0;
+	cursor : pointer;
+}
+
+.simpleForm input[type=reset] {
+	width : 100%;
+	border-radius : 5px;
+	font-weight : 400;
+	margin : 5px 0;
+	cursor : pointer;
+}
+
+
+.simpleForm .btnWhite {
+	background : #fff;
+	padding : 1.2em 0px;
+	color : #58D68D;
+	border : 2px solid #58D68D;
+}
+
+.addtional {
+	margin : 30px 0;
+	text-align : right;
+	font-weight : 400;
+	text-decoration : none;
+}
+
+#btnFindId {
+	color : #a1a1a1;
+	font-weight : 400;
+}
+
+#btnFindPassword {
+	color : #a1a1a1;
+	font-weight : 400;	
+}
+#btnFindId:hover {
+	color : #515151 !important;
+}
+
+#btnFindId:visited {
+	color : #515151;
+}
+
+#btnFindPassword:hover {
+	color : #515151 !important;
+}
+
+#btnFindPassword:visited {
+	color : #515151;
+}
+
+.borderBottom {
+	border-bottom : 1px solid #000;
+}
+
+.logregCheckView {
+	width : 760px;
+	margin : 45px auto;
+	text-align : center;
+	font-size : 18px;
+}
+
+.resultBox {
+	margin : 50px 0;
+}
+
+.resultIdMsg {
+	margin : 30px 0;
+	font-size : 24px;
+	font-weight : 400;
+	text-decoration : underline;
+}
+
+.btns {
+	margin : 1.5em 0;
+}
+
+.width200 {
+	width : 200px;
+}
+
+/* 마이 페이지 */
+.mypageContent {
+	width : 1180px;
+	overflow : hidden;
+	margin : 0px auto;
+}
+
+.tabMyPage {
+	overflow : hidden;
+	margin-bottom : 30px;
+	width : 90%;
+	display: table;
+	margin : 0 auto;
+}
+
+.contentMyPage {
+	text-align : center;
+}
+
+.tabMyPage span {
+	display : table-cell;
+	width : 16.7%;
+	border : 1px solid #999;
+	color : #000000;
+	text-align : center;
+	padding : 10px 0px;
+	border-radius : 10px 10px 0 0;
+	font-size : 14px;
+	cursor : pointer;
+}
+
+.myPageHover:hover {
+	background-color : #58D68D;
+	color : #ffffff;
+}
+
+.myInfoId {
+	margin: 5px 0;
+    width: 100%;
+    height: 60px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wishlist_linebutton {
+	padding-right: 64px;
+    height: 45px;
+}
+
+.wishlist_all ul li {
+	padding : 7px 10px;
+	clear : both;
+	overflow : hidden;
+}
+
+.wishListGroup {
+	width : 850px;
+	border-top : 1px solid #555;
+	border-bottom : 1px solid #555;
+	margin : 0px auto;
+	list-style : none;
+	font-size : 16px;
+	clear : both;
+	padding : 0px;
+}
+
+.headerInfo {
+	border-top : 1px dotted #ccc;
+	border-bottom : 1px dotted #ccc;
+	font-size : 14px;
+	color : #777;
+	overflow : hidden;
+	display : flex;
+	align-items : center;
+}
+
+.headerInfo label {
+	display : block;
+	float : left;
+}
+
+.wishcell1 {
+	width : 50px;
+	position : relative;
+	z-index : 10;
+}
+
+.wishcell2 {
+	width : 100px;
+}
+
+.wishcell3 {
+	width : 100px;
+}
+
+.wishcell4 {
+	width : 380px;
+}
+
+.wishcell5 {
+	width : 150px;
+}
+
+.itemInfo {
+	border-bottom : 1px dotted #ccc;
+	position : relative;
+}
+
+.itemInfo input {
+	vertical-align : middle;
+}
+
+.itemInfo div {
+	display : table-cell;
+	text-align : center;
+	vertical-align : middle;
+	height : 100px;
+}
+
+.deletebutton {
+	border : 1px solid #000000;
+	padding-left : 3px;
+	padding-right : 3px;
+	cursor : pointer;
+	color : #666666;
+}
+
+.wishimg {
+	border-radius: 100%;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.wishlist_linebutton {
+	float : right;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	width : 850px;
+	margin : 0 auto;
+}
+
+.linebutton_select {
+	float : right;
+}
+
+.cartGroup {
+	width : 980px;
+	border-top : 1px solid #555;
+	border-bottom : 1px solid #555;
+	margin : 0px auto;
+	list-style : none;
+	font-size : 16px;
+	clear : both;
+	padding : 0px;
+}
+
+.cartcell1 {
+	width : 50px;
+}
+
+.cartcell2 {
+	width : 50px;
+}
+
+.cartcell3 {
+	width : 100px;
+}
+
+.cartcell4 {
+	width : 250px;
+}
+
+.cartcell5 {
+	width : 120px;
+}
+
+.cartcell6 {
+	width : 120px;
+}
+
+.cartcell7 {
+	width : 120px;
+}
+
+.cartcell8 {
+	width : 100px;
+}
+
+.cartcell9 {
+	width : 50px;
+	position : relative;
+	z-index : 10;
+}
+
+.cartimg {
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.cartbtnBlack {
+	padding: 1.3em 0px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color : #58D68D;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top : 20px;
+}
+
+.cartbtnWhite {
+	padding: 1.3em 0px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #58D68D;
+    background-color : #fff;
+    color: #58D68D;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top : 20px;
+}
+
+#mypageQnA {
+	text-align : left;
+}
+
+#mypageQnA {
+	text-align : left;
+}
+
+#mypageQnA ul {
+	border : 1px solid #ddd;
+	margin : 10px 30px 10px 10px;
+	padding : 15px;
+	font-size : 18px;
+}
+
+#mypageQnA ul li {
+	padding : 5px;
+}
+
+#mypageQnA ul li:first-child {
+	border-bottom : 1px dotted #ddd;
+	font-size : 16px;
+	margin-bottom : 10px;
+}
+
+#mypageQnA ul.answer {
+	margin : 10px 10px 10px 30px;
+	background : #f0f2fb;
+}
+
+.qnabutton_select {
+	padding : 30px;
+}
+
+.qnaSelecterline {
+	text-align : right;
+	padding-right : 30px;
+}
+
+.qnabutton_select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+.booked_all ul li {
+	padding : 7px 10px;
+	clear : both;
+	overflow : hidden;
+}
+
+.bookedGroup {
+	width : 1080px;
+	border-top : 1px solid #555;
+	border-bottom : 1px solid #555;
+	margin : 0px auto;
+	list-style : none;
+	font-size : 16px;
+	clear : both;
+	padding : 0px;
+}
+
+.bookedcell1 {
+	width : 50px;
+	position : relative;
+	z-index : 10;
+}
+
+.bookedcell2 {
+	width : 50px;
+}
+
+.bookedcell3 {
+	width : 150px;
+}
+
+.bookedcell4 {
+	width : 250px;
+}
+
+.bookedcell5 {
+	width : 150px;
+}
+
+.bookedcell6 {
+	width : 100px;
+}
+
+.bookedcell7 {
+	width : 120px;
+}
+
+.bookedcell8 {
+	width : 120px;
+}
+
+.bookedcell9 {
+	width : 120px;
+}
+
+.purchased_all ul li {
+	padding : 7px 10px;
+	clear : both;
+	overflow : hidden;
+}
+
+.purchasedGroup {
+	width : 1050px;
+	border-top : 1px solid #555;
+	border-bottom : 1px solid #555;
+	margin : 0px auto;
+	list-style : none;
+	font-size : 16px;
+	clear : both;
+	padding : 0px;
+}
+
+.purchasedcell1 {
+	width : 50px;
+	position : relative;
+	z-index : 10;
+}
+
+.purchasedcell2 {
+	width : 120px;
+}
+
+.purchasedcell3 {
+	width : 250px;
+}
+
+.purchasedcell4 {
+	width : 100px;
+}
+
+.purchasedcell5 {
+	width : 120px;
+}
+
+.purchasedcell6 {
+	width : 120px;
+}
+
+.purchasedcell7 {
+	width : 120px;
+}
+
+.purchasedcell8 {
+	width : 150px;
+}
+
+
+
+/* ItemQnA */
+#itemQnA {
+	text-align : left;
+}
+
+#itemQnA ul {
+	border : 1px solid #ddd;
+	margin : 10px 30px 10px 10px;
+	padding : 15px;
+	font-size : 18px;
+}
+
+#itemQnA ul li {
+	padding : 5px;
+}
+
+#itemQnA ul li:first-child {
+	border-bottom : 1px dotted #ddd;
+	font-size : 16px;
+	margin-bottom : 10px;
+}
+
+#itemQnA ul.answer {
+	margin : 10px 10px 10px 30px;
+	background : #f0f2fb;
+}
+
+.QnAwriterName {
+	font-weight : bold;
+}
+
+.QnAregDate {
+	float : right;
+}
+
+.pageButton {
+	width: 36px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.pageInsertButton {
+	background: #58D68D;
+    width: 100px;
+    margin: 1%;
+    display: block;
+    padding: 10px 0px;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 10px;
+    float: right;
+    margin-right: 30px;
+}
+
+.pageOtherButton {
+	background: #58D68D;
+    width: 70px;
+    margin: 5px;
+    padding: 10px;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 10px
+}
+
+#board_list {
+	text-align : center;
+}
+
+.QnAbutton {
+	text-align : right;
+}
+
+/* Select-option Design */
+.qnabutton_select {
+  width: 200px;
+  padding: .8em .5em;
+  font-family: inherit;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+}
+
+.linebutton_select {
+	width: 200px;
+  padding: .8em .5em;
+  font-family: inherit;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+  margin-right : 100px;
+}
+

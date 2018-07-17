@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*nav top*/
+.menu_link {
+    text-decoration: none;
+    color:#ccc;
+    font-size: 18px;
+}
+#menu_left{
+    list-style: none;
+}
+#top {
+    height: 35px;
+    background: #444;
+    margin: 20px 0px;
+}
+#top #menu_left li{
+    display: inline;
+}
+#top #menu_left .menu_link{
+    float: left;
+    margin-right: 10px;
+    padding: 0px 20px;
+    line-height: 35px;
+}
+.menu_left{
+    clear: both;
+}
+
+/* div #sellerContents */
+#sellerContents {
+	text-align: center;
+	margin: 0 auto;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+
+}
+
+.sellerName:hover {
+	color: #58D68D;
+}
+
+#sellerSelContents {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	margin: 0 auto;
+}
+.AddBtn {
+	border:0;
+	background:#58D68D;
+	border-radius:0.5em;
+	padding:5px;
+}
+
+.AddBtn:hover{
+	font-weight:800;
+	color:#fff;
+}
+
+table a:hover{
+	font-weight:800;
+	color:#58D68D;
+}
+
+.fileBtn{
+	border:0;
+}
+
+div .moneyRst{
+	margin:auto;
+	width:max-content;
+	padding:10px;
+	border-top:2px solid #58D68D;
+	display: inline-block;
+	max-width:90%;
+	text-align:center;
+}
+div #accountResult{
+	text-align:center;
+}
+
+div .moneyRst dl{
+	display:inline-block;
+	padding:20px;
+}
+
+
+

@@ -1,0 +1,1207 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* 釉뚮옖�붾툝猷� : #3F51B5  釉뚮옖�붾젅�� : #FF9489*/
+body, input, select, textarea, button, .ui-btn { font-family: inherit; }
+
+img {border:0px}
+body {font-family: 'Noto Sans KR', sans-serif; margin: 0px; padding: 0px;}
+a:link{ color:#515151; text-decoration: none}
+a:hover {color:#556ae1}
+a:visited {color:#515151; text-decoration: none}
+.clear {clear: both}
+::-moz-selection {color: #fff; background: #000}
+::selection { color: #fff; background: #000}
+
+.forMobile {display: none}
+.containerFlexi {overflow: hidden; margin: 0px auto; width: 1350px;}
+.containerSeller {position: relative; padding-bottom: 12px;}
+/*#containerTopban { height: 110px !important; }*/
+.txtC {text-align: center}
+.txtL {text-align: left}
+.txtR {text-align: right}
+pre {font-family: 'Noto Sans KR', sans-serif }
+
+#jssor_1 {display: none}
+
+/* 161207 */
+#categoryMobile {padding: 10px 10px;overflow: auto; background: #fff; position: fixed; left: -280px; text-align: left; width:250px; height:100%; z-index:999; top:0px; padding-top: 10px; padding-left: 30px; padding-right: 30px}
+#categoryMobile a {display: block; color: #000; padding: 10px 0px; border-bottom: 1px dotted #efefef; font-size: 14px}
+#categoryMobile a:last-child { border:none; }
+#categoryMobile a:first-child { border:none; }
+#categoryMobile .btn_x {text-align: right}
+#bkscreen {position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); top:0px; z-index:990; display:none}
+/* //161207 */
+/* 2017-06 */
+#categoryMobile a {display: block; color: #000; padding: 14px 0px; border: 0px; font-size: 11pt}
+.loginMobile {margin: 0px auto 10px auto; text-align: center; overflow: hidden; line-height: 200%}
+.loginMobile a {display: inline !important; font-size: 9pt !important; padding: 3px 0px !important; }
+
+
+/* gnb �щ씪�대뜑  - 2017-06 �ъ슜�섏� �딆쓬
+#sliderMenu {  position: relative;  overflow: hidden;}
+#sliderMenu ul {  position: relative;  margin: 0;  padding: 0;  height: 30px;  list-style: none;  width: 10000px;}
+#sliderMenu ul li {  position: relative;  display: block;  float: left;  margin: 0;  padding: 0;  width: auto;  height: 30px;  text-align: center;  }
+a.control_prev, a.control_next {  position: absolute;  top: inherit;  margin-left: 20px;  z-index: 999;  display: block;  padding: 0;  background: white;  width: 30px;  height: auto;  color: #555; text-decoration: none;  font-weight: 600;  font-size: 20px;cursor: pointer;}
+a.control_prev:hover, a.control_next:hover {  -webkit-transition: all 0.2s ease;}
+a.control_prev {  border-radius: 0 2px 2px 0;}
+a.control_next {  right: 0;  border-radius: 2px 0 0 2px;} */
+
+
+/* �ㅻ뜑 */
+#topBanner {overflow: hidden; text-align: center; background:#A60706;}
+#closeTopban {position: absolute; top:15px; right:15px}
+#topbanImg {width: 100%; max-width: 960px; }
+#logoArea {}
+.containerLogo {padding-top:10px; text-align: center; position: relative}
+.menuTop {position: absolute; right: 20px; top: 10px; font-size: 12px}
+.menuTop a {padding: 0px 10px; letter-spacing: 1px}
+.cartAmount {background: #000; color: #fff;  border-radius: 25px;padding:0px 5px; margin-left: 3px; font-size:11px}
+
+#gnbArea {overflow: hidden}
+.containerGnb {margin-left: 35px;}
+.gnbBox {padding:2px 0px;  width: 1000px; float: left;margin-left: 30px}
+.gnbBox a {font-size: 12px; letter-spacing: 2px; padding:3px 10px; margin: 0px 20px; color: #fff;}
+.gnbBox a:hover {color:#3F51B5}
+.gnbBox .on {border-bottom: 1px solid #ddd; font-weight: 400; color:#000}
+.gnbBox span {font-size: 13px; color:#ccc; padding: 3px 20px; }
+.searchBox { font-size: 13px; float:left; padding-left: 70px; padding-top:5px}
+.fa-search {font-size: 12px ; color: #545454}
+.searchInput {border:1px solid #ccc; width:150px; padding: 2px; margin-left:7px}
+
+/* 2018-08-22 異붽�  */
+::-webkit-input-placeholder { color:#a1a1a1; font-weight: 300; }
+
+/* 2017-06 異붽� */
+.containerLogo {text-align: left; padding: 15px 0px}
+.containerLogo img {width: 130px}
+.containerGnbtab {border-bottom: 1px solid #000; font-size: 10pt;}
+.containerGnbtab a {border-bottom: 2px solid #fff; padding: 13px 30px;  display: block; float: left; color:#888}
+.containerGnbtab a:hover {color:#888; border-bottom: 2px solid #888;}
+.containerGnbtab a.on {border-bottom: 2px solid #000; color: #000;}
+.containerGnb {margin: 0px auto 30px auto; text-align: center; overflow: hidden; padding: 15px 0px; }
+.containerGnb a {font-size: 10pt; letter-spacing: 2px; padding:3px 10px; margin: 0px 20px; }
+.containerGnb a:hover {color:#3F51B5}
+.containerGnb .on {border-bottom: 1px solid #ddd; font-weight: 400; color:#000}
+.containerGnb span {font-size: 13px; color:#ccc; padding: 3px 20px; }
+.menuTop {font-size: 10pt; font-weight: bold; letter-spacing: 0px; top:40px }
+
+/* // 2017-06 異붽� */
+
+.containerLogo.noMenu {text-align: center; margin: 60px auto 40px auto; padding: 0; }
+
+
+
+/* 2017-08-22 異붽� */
+
+form.simpleForm .pageTitle { text-align: left; font-size: 1.1em; margin: 1.5em 0 1em 0; font-weight: 400; }
+form.simpleForm .pageTitle.txtC { text-align: center; }
+
+form.simpleForm input[type=email],
+form.simpleForm input[type=password],
+form.simpleForm input[type=number],
+form.simpleForm input[type=text]{ width: 100%; height: 60px; padding: 3px 20px; border-radius: 5px; border: 1px solid #D3D3D3; }
+
+form.simpleForm input[type=email][disabled],
+form.simpleForm input[type=password][disabled],
+form.simpleForm input[type=number][disabled],
+form.simpleForm input[type=text][disabled]{ color:#999; background-color: #f1f1f1; }
+
+form.simpleForm input[type=email][readonly],
+form.simpleForm input[type=password][readonly],
+form.simpleForm input[type=number][readonly],
+form.simpleForm input[type=text][readonly]{ color:#666; background-color: #f1f1f1; }
+
+
+form.simpleForm input[type=email].top,
+form.simpleForm input[type=password].top,
+form.simpleForm input[type=number].top,
+form.simpleForm input[type=text].top{ border-radius: 5px 5px 0 0; }
+form.simpleForm input[type=email].middle,
+form.simpleForm input[type=password].middle,
+form.simpleForm input[type=number].middle,
+form.simpleForm input[type=text].middle{ border-radius: 0; margin-top: -1px; }
+form.simpleForm input[type=email].bottom,
+form.simpleForm input[type=password].bottom,
+form.simpleForm input[type=number].bottom,
+form.simpleForm input[type=text].bottom{ border-radius: 0 0 5px 5px; margin-top: -1px; }
+
+
+form.simpleForm p { font-size: 0.8em; margin: 5px; color: #444; line-height: 1.5em; }
+form.simpleForm input[type=checkbox] { display: none; }
+form.simpleForm input[type=checkbox] + label { width: 100%; text-indent: 45px; background: url(/include/custom/images/login/login_btn_checkbox_n.png) no-repeat 0 50%; background-size: 36px 36px; display: inline-block; min-height: 37px; line-height: 37px; cursor: pointer; }
+form.simpleForm input[type=checkbox]:checked + label { background: url(/include/custom/images/login/login_btn_checkbox_s.png) no-repeat 0 50%; background-size: 36px 36px; }
+form.simpleForm ul li{ text-align: left; }
+form.simpleForm ul{ list-style: none; padding: 0; margin: 1.5em 0; }
+form.simpleForm button {padding: 1em 0px;  width: 100%; border-radius: 5px; border: none; color: #fff; font-weight: 400; background: #A1A1A1; }
+form.simpleForm button.half {width: 49.3%; }
+form.simpleForm button.btnBlack {background: #000;}
+form.simpleForm button.btnWhite {background: #FFF; padding: 0.9em 0px; color: #000; border: 2px solid #000; }
+form.simpleForm button.textSize {width: auto; padding-left: 3em; padding-right: 3em; }
+form.simpleForm button.width200 {width: 200px; }
+form.simpleForm .btns { margin: 1.5em 0; }
+
+/* //2017-08-22 異붽� */
+
+/* �� */
+.titleSectionHome {text-align: center; letter-spacing: 10px; font-size: 17px; color: #3f3f3f; padding: 40px 0px}
+.titleSectionHome i {color:#aaa}
+
+/* ��_移댄뀒怨좊━ */
+.containerCateIcon {padding:30px 3%; border-bottom: 1px solid #f2f2f2}
+.containerCateIcon ul {width:11.1111%; list-style: none; margin:0xp; padding: 0px; display: block; float: left}
+.containerCateIcon ul li {list-style: none; margin:0xp; padding: 0px; text-align: center; font-size: 14px; letter-spacing: 4px}
+
+/* ��_�꾩씠�쒕━�ㅽ듃 */
+.containerItemListHome {padding:30px 0px; border-bottom: 1px solid #f2f2f2}
+.containerItemListHome ul {width:19%; list-style: none; margin:0.5%; padding: 0px; display: block; float: left; overflow: hidden}
+.containerItemList ul {margin-bottom: 35px}
+.containerItemListHome ul li {list-style: none; margin:0px; padding: 0px; text-align: center; font-size: 14px; letter-spacing: 1px; padding:2px 0px}
+.boxImgItem img {width:100%}
+.boxPriceItem span {font-size: 12px}
+.boxPriceItem b {color:#FF9489 ; font-weight: 300; font-size: 13px}
+.boxPriceItem small {text-decoration: line-through; color:#aaa}
+.boxPriceItem i {color:#aaa}
+.boxMarketItem {line-height:30px}
+.boxMarketItem a {display:inline-block; overflow:hidden; padding:0px; height:31px; background:#ededed; border-radius: 25px; padding-right:15px;font-size: 15px;}
+.boxMarketItem a img {width:22px; vertical-align:-15%; border-radius: 25px;margin-right: 8px}
+.boxMarketItem span {font-size:12px;vertical-align:8%; }
+
+.btnMoreHome {width:250px; border:1px solid #000; display: block; padding:4px 0px; clear:both; margin:20px auto; text-align: center ; font-size: 14px}
+.btnMoreHome:hover {background: #000; color: #fff}
+
+/* ��_留덉폆*/
+.containerMarketHome {padding:30px 0px; border-bottom: 1px solid #f2f2f2}
+.containerMarketHome ul {width:19%; list-style: none; margin:0.5%; padding: 0px; display: block; float: left; overflow: hidden}
+.containerMarketHome ul li {list-style: none; margin:0xp; padding: 0px; font-size: 14px; padding:2px 0px; overflow: hidden}
+.boxMarketInfoHome {}
+.profileMarketInfo {width:20%; border-radius: 60px; float:left}
+.divMarketInfo {float:right; width:80%; padding:5px 10px 0px 20px; font-size:15px}
+.divMarketInfo i {float:right; font-size:13px;padding-top:8px}
+.divMarketInfo p {font-size:13px; padding: 0px; margin: 0px}
+.boxMarketItemHome {clear:both; padding: 10px 0px !important; overflow: hidden}
+.boxMarketItemHome a {width:50%; float:left; display: block; }
+.boxMarketItemHome a img {width: 100%}
+
+/* �섏씠吏� ���댄� & 釉뚮젅�쒗겕�� */
+.containerPageHeader {padding:10px 0px 30px 0px; overflow: hidden}
+.containerPageHeader .socialProfile {text-align: center}
+.containerPageHeader .socialProfile img {margin: 10px auto; border-radius: 100%}
+.pageTitle {text-align: center; letter-spacing: 10px; font-size: 22px; font-weight: 500}
+.pageTitle small {font-size: 16px; color:#999; letter-spacing: 0px; padding: 0px 10px; font-weight: 300}
+.breadCrumb {text-align: center; font-size: 14px; color:#c5c5c5; padding: 15px}
+.breadCrumb span {padding: 0px 15px}
+
+/* �뚯뀥 由ъ뒪�� */
+.containerSocialList {}
+.containerSocialList ul { list-style: none; overflow: hidden; width: 16.66%; padding: 0px; margin: 0px; float: left; padding:18px 0px}
+.containerSocialList ul li {list-style: none; overflow: hidden; text-align: center; padding:3px 0px}
+.socialListProfile img {border-radius:100%; width:97%; max-width: 200px}
+
+/* �뚯뀥 �뷀뀒�� */
+.containerSocialDetail {}
+.containerSocialDetail ul {list-style: none; overflow: hidden; width: 20%; padding: 0px; margin: 0px; float: left; margin:18px 0px; position: relative}
+.containerSocialDetail ul li {text-align: center}
+.containerSocialDetail .thumbSocial img {width: 98%}
+.containerSocialDetail .labelSocial {position: absolute; right: 1%; bottom: 1%; padding: 5px 10px; background: #000; color: #fff; font-size: 13px}
+.containerSocialDetail .labelSocial a {color: #fff}
+.containerSocialDetail .labelSocial:hover {background:#3F51B5}
+
+/* �꾩씠�� 由ъ뒪�� */
+.containerItemList {padding-bottom: 50px}
+.containerItemList ul {width:19%; list-style: none; margin:0.5%; padding: 0px; display: block; float: left; overflow: hidden; padding-bottom: 30px}
+.containerItemList ul li {list-style: none; margin:0xp; padding: 0px; text-align: center; font-size: 14px; letter-spacing: 1px;padding:2px 0px}
+
+/* 蹂몄씤�몄쬆 */
+.containerRealName { width: 600px; border-top:1px solid #555; }
+.containerRealName ul.ment li{ color:#666; }
+.containerRealName input[type='button'],
+.containerRealName input[type='submit']
+{width: 100%; border:none}
+.containerRealName .btnRealName { width:100%; background: #000; color:#FFF; }
+.containerRealName input.half[type='button'] {width: 49%; }
+
+.pages {text-align: center; padding-top: 20px}
+.pages a {
+	padding: 1px 4px;
+	color:#666
+}
+.pages a.here {font-weight: 700; color:#fff; background: #2b41b9}
+.pages a.here:hover {color: #fff}
+.pages a:hover {color:#556ae1; }
+
+
+
+
+
+
+/* �꾩씠�� �곸꽭 */
+.containerItemDetail {width: 980px; font-size: 14px}
+.containerItemDetail ul {list-style: none; margin:0px}
+.containerItemDetail li {list-style: none; padding:5px 10px}
+.imgItemDetail {width:50%; padding:2%; float:left;}
+.imgItemDetail li {padding: 0px}
+.infoItemDetail {width:50%; padding:2%; float:right; color:#777}
+.infoItemDetail .titleItem {font-size: 22px; color:#000}
+.infoItemDetail .priceItem {font-size: 20px; color:#000; border-bottom: 1px solid #555; padding: 0px 0px 18px; margin: 5px 10px 20px}
+.infoItemDetail .priceItem span {font-size: 18px; color: #555}
+.infoItemDetail .ui-selectmenu-button {width: 100%}
+.imgItemL {margin: 0px; padding: 0px; font-size: 0px; line-height: 0px}
+.imgItemL img {width: 100%; max-width: 500px}
+.imgItemS {margin: 0px; padding: 0px; width: 20%; float: left;font-size: 0px; line-height: 0px}
+.imgItemS img {width: 100%; max-width: 100px}
+.tabItem {padding:20px 0px; text-align: center; border-bottom: 1px solid #ccc}
+.tabItem a {display: inline; padding:10px 35px; letter-spacing: 3px; color:#999}
+.tabItem a.on {font-size:16px; color:#000}
+#itemDetailInfo {padding:30px 30px 50px}
+#itemOrderlInfo {padding:30px 30px 50px}
+#itemReview {padding:30px 30px 50px }
+#itemQna > #inquiryArea {padding:30px 30px 50px}
+.spinnerItem input[type='button'] {border:none; background: none;font-size: 20px; width: 26px; }
+.spinnerItem input[type='text'] {border:1px solid #bbb; background: none; text-align: center; width:50px; padding: 3px 0px}
+.btnFavorItem {border: 1px solid #666; width: 48%; margin: 1%; display: block; text-align: center; padding: 10px 0px; color: #000; float: left}
+.btnFavorItem i {margin:0px 5px}
+.btnCartItem {border: 1px solid #666; width: 48%; margin: 1%; display: block; text-align: center; padding: 10px 0px; color: #000; float: left}
+.btnBuyItem {clear: both ; background:#000; width: 98%; margin: 1%; display: block; text-align: center; padding: 10px 0px; color: #fff !important; margin-top: 10px}
+.infoItemDetail .marketInfo {padding: 20px 0px; border-top: 1px solid #ccc; margin:3%; width: 94%}
+.infoItemDetail .marketInfo img {width: 90px; border-radius: 100%; float: left; margin-right: 20px}
+.infoItemDetail .marketInfo div {padding: 7px 0px}
+.infoItemDetail .nameMarket {line-height: 30px; font-size: 16px; font-weight: 500}
+.infoItemDetail .marketInfo i {margin-right: 5px}
+.yellowIcon {color:#ffaa00}
+#itemOrderlInfo dl {margin:10px 0px 20px 0px; clear: both; overflow: hidden; line-height: 180%}
+#itemOrderlInfo dt {width: 120px; float: left; font-weight: 700}
+#itemOrderlInfo dd {float: right; width: 780px; margin-left: 0px}
+#itemOrderlInfo dd i {margin-right: 8px}
+#itemOrderlInfo dd.kakao {background: url(/include/base/images/ico_kakao2.png) no-repeat left center; padding-left: 22px }
+#itemOrderlInfo li {padding:0px; background:url(/include/base/images/dot.gif) no-repeat left 10px;padding-left: 10px}
+#itemReview {padding-bottom: 50px}
+.reviewBox {clear: both; overflow: hidden; border-bottom: 1px dotted #eee; padding: 10px; margin:10px 30px }
+.reviewBox img {width:80px; float: left}
+.reviewBox li {float: left}
+.reviewBox b {color: #FF9489; display: block; padding-bottom: 8px}
+#itemQna {}
+#itemQna ul {border: 1px solid #ddd; margin:10px 30px 10px 10px; padding: 15px; font-size: 13px}
+#itemQna ul li:first-child {border-bottom: 1px dotted #ddd; font-size: 16px; margin-bottom: 10px}
+#itemQna ul.answer {margin:10px 10px 10px 30px; background: #f0f2fb}
+#itemQna ul li {padding: 5px}
+#itemQna ul li span {float: right; color:#777; font-size: 13px}
+/* 201706 異붽� */
+.selectedItem {border: 1px solid #bbb; padding: 10px 15px; margin:5px 10px;}
+.selectedItem li {clear:both ; text-align: right}
+.selectedItem dl {margin: 0px}
+.selectedItem dt, .selectedItem dd {float: left;margin: 0px}
+.selectedItem dt {border-left: 1px solid #999; padding-left: 10px}
+.selectedItem dd { padding-right: 10px; padding-left: 5px}
+.selectedItem dl > dt:first-child {border: none; padding-left: 0px}
+.spinnerItem input[type='button'] {border:none; background: #333;font-size: 20px; color: #fff}
+.spinnerItem input.btnDel {background: none; color: #000; font-weight: normal}
+.spinnerItem {padding: 0px !important}
+.priceItem select {width: 100%; padding: 5px; border: 1px solid #333}
+
+
+
+
+/* �대깽�몃━�ㅽ듃 */
+.containerEventList {width: 980px; border-top: 1px solid #d9d9d9; padding:25px 0px 50px 0px}
+.containerEventList ul {list-style: none; padding: 25px 12px 20px 12px; width: 50%; float: left; margin: 0px}
+.containerEventList ul li {font-size: 14px; text-align: center; font-weight: 300; padding: 2px 0px; color:#4a4a4a}
+.containerEventList ul li img {width: 100%; max-width: 465px; margin-bottom: 15px}
+.containerEventList .tagEventList {font-size: 13px; color:#fff; }
+.containerEventList .tagEventList span {background: #000; padding: 1px 5px}
+.containerEventList a {font-size: 18px; color: #000; font-weight: 500}
+
+/* �대깽�� �곸꽭 */
+.containerEventDetail {border-bottom: 1px solid #d9d9d9; padding-bottom: 35px; margin-bottom: 35px}
+.imgEventDetail {text-align: center}
+.imgEventDetail img {width: 95%; max-width: 1000px; padding-bottom: 15px}
+.titleEventDetail {font-size: 15px; text-align: center; padding: 16px 0px}
+.titleEventDetail span {font-size:12px; background: #000; padding: 1px 5px; color:#fff; margin-right: 7px}
+.dateEventDetail {font-size: 13px; letter-spacing: 2px; text-align: center;}
+.btnEventDetail {padding-top: 30px; text-align: center; font-size: 13px}
+.btnEventDetail a {display: inline-block; margin: 5px ; padding: 5px 50px; background: #555; color: #fff}
+.btnEventDetail a:hover {background: #000}
+.btnEventDetail a.btnRed {background: #FF9489 }
+.btnEventDetail a.btnBlue { background: #3F51B5}
+.containerReply {width: 980px}
+.containerReply dl {margin: 10px; border-bottom: 1px solid #eee; padding: 10px; overflow: hidden; clear: both; font-size: 13px}
+.containerReply dl.reply {margin-left: 40px; background: #efefef}
+.containerReply dt {float: left; }
+.containerReply dt img {width: 80px; }
+.containerReply dd {float: left; padding-left: 15px; max-width: 840px; line-height: 140%; margin-left: 0px}
+.containerReply dd span {display: block; color: #3F51B5; font-size: 14px; font-weight: 600; margin-bottom: 7px}
+.containerReply dd b {margin-right: 5px; color:  #777}
+.containerReply .reply dd {max-width: 800px}
+
+
+
+
+
+
+/* 留덉폆 由ъ뒪�� */
+.containerMarketList {font-size: 13px; color: #575757; border-top: 1px solid #ddd; padding-top: 20px}
+.containerMarketList ul {list-style: none; margin: 10px; width: 31%; padding: 14px 2%; float: left}
+.containerMarketList li {padding: 4px 0px}
+.containerMarketList ul img  {width:35%; border-radius: 100%; float: left; margin-right: 15px}
+.containerMarketList .nameMarket {line-height: 30px; font-size: 17px; font-weight: 500}
+.tagMarketList {padding: 10px 0px}
+.tagMarketList a {padding: 5px 4px; font-size: 14px; font-weight: 300; color: #3F51B5 }
+.marketFilter {text-align: center; padding-bottom: 20px; font-size: 14px}
+.marketFilter i {font-size: 16px; margin-right: 8px}
+.marketFilter a {color: #333 }
+#filterSelect {position: absolute; padding: 30px; margin: 0px auto; background: url(/include/base/images/bg_filter.png) ; color: #fff; margin-top: 20px; line-height: 180%}
+#filterSelect div {max-width: 800px; margin: 0px auto}
+#filterSelect span {margin: 0px 5px; word-break: keep-all; display: inline-block}
+.closeFilter { padding-top: 30px; }
+.closeFilter a i {color: #fff !important; font-size: 40px !important;}
+
+
+/* 媛쒕퀎留덉폆 */
+.containerTopMarket {background: #fff; text-align: center; overflow: hidden; /*line-height: 25px*/}
+.containerTopMarket a {margin: 2px 6px; font-size: 12pt; letter-spacing: 2px; /*float: right*/}
+.logoTopMarket {float:left !important;}
+.logoTopMarket img {vertical-align: -5px}
+.containerMarketProfile {background-size: 100%; margin: 20px auto 30px;  overflow: hidden; font-size: 14px}
+.containerMarketProfile ul {list-style: none;  width: 100%; margin: 0px; overflow: hidden; padding: 40px 0px 50px;}
+.containerMarketProfile li {list-style: none; display: block; text-align: center;padding: 7px}
+.bg_bk {background: url('/include/base/images/bg_bk.png'); color:#fff}
+.bg_bk .tagMarketProfile a {color: #fff}
+.containerMarketProfile img {border-radius: 100%}
+.nameMarketProfile {font-size: 28px; letter-spacing: 6px;}
+.btnMarketProfile {padding: 20px 0px !important; }
+.btnMarketProfile i {margin-right: 7px}
+.btnMarketProfile a {padding: 5px 80px; margin: 10px 2px}
+.bg_bk .btnMarketProfile a {border: 1px solid #fff; color: #fff; }
+.bg_bk .btnMarketProfile a:hover {background: #fff; color: #000}
+.txtMarketProfile {width: 80%; min-width: 280px;  margin: 0px auto; }
+.tagMarketProfile a {padding: 0px 7px}
+.containerMarketProfS {background-size: 100%; margin: 30px auto;  overflow: hidden; font-size: 14px}
+.containerMarketProfS ul {list-style: none;  width: 100%; margin: 0px; overflow: hidden; padding: 30px 0px; text-align: center }
+.containerMarketProfS li {list-style: none; display: block; padding: 7px; display: inline}
+.containerMarketProfS li img {width: 70px; border-radius: 100%; vertical-align: -1.5em}
+.containerMarketProfS li a {color: #fff}
+.containerMarketProfS li i {font-size: 20px}
+
+/*濡쒓렇�� */
+.containerLogin {width:760px; padding: 0px; margin:0 auto 10px auto; border-bottom: 1px solid #E1E1E1; font-size: 12pt; }
+.containerLogin.bottom { border: none; padding-bottom: 50px; }
+.containerLogin ul {list-style: none; margin: 0px; padding:0; }
+.containerLogin li {list-style: none;}
+/*.containerLogin input[type='password'] {width:210px; padding: 3px 0px} */
+.containerLogin button {padding: 20px 0px; margin:5px 0; width: 100%; border-radius: 5px; border: none; color: #fff; font-weight: 400; }
+.containerLogin button.half {width: 49.3%; }
+.containerLogin button.btnBlack {background: #000;}
+.containerLogin button.btnWhite {background: #FFF; padding: 18px 0px; color: #000; border: 2px solid #000; }
+.containerLogin button.btnFacebook {background: #45639B url(/include/custom/images/login/login_icon_facebook.png) no-repeat 16px 50%; background-size:40px 40px; margin-right: 10px; text-align: left; text-indent: 80px; margin-top: 0.4em; margin-bottom:0.4em; }
+.containerLogin button.btnGooglePl {background: #CB4F41 url(/include/custom/images/login/login_icon_google.png) no-repeat 20px 50%; background-size:40px 40px; text-align: left; text-indent: 90px; letter-spacing: 0.1em; margin-top: 0.4em; margin-bottom:0.4em;  }
+.containerLogin .addtional { margin: 30px 0; text-align: right;  }
+.containerLogin .addtional a { color:#a1a1a1; font-weight: 400; }
+.containerLogin .addtional a.findId:after { content: "|";  margin: 0 15px; color:#a1a1a1;  }
+.containerLogin form.simpleForm input[type=password],
+.containerLogin form.simpleForm input[type=email],
+.containerLogin form.simpleForm input[type=number],
+.containerLogin form.simpleForm input[type=text]{ margin: 5px 0; }
+
+
+.containerHeader .pageTitle{ margin: 60px 0 30px 0; font-size: 22px; letter-spacing: 0; }
+.containerHeader.borderBottom{ border-bottom: 1px solid #000; }
+.containerHeader .pageTitle { font-weight: 400; }
+.marginTop15 { margin-top: 15px; }
+
+
+/* �뚯썝媛��� �뚮줈�� �덈궡 �대뜑 */
+.containerJoinProgress{ border-top: 1px solid #000; border-bottom: 1px solid #000; height: 110px; font-size: 11pt; margin: 60px 0; }
+.containerJoinProgress ol{ padding: 0; margin: 0; list-style: none; text-align: center; }
+.containerJoinProgress li{ width: 190px; height: 108px; padding-top:75px; display: inline-block; background: url(/include/custom/images/join/join_icon_confirm.png) no-repeat 50% 25%; background-size: 62px 48px; opacity: 0.4; font-weight: 500; }
+.containerJoinProgress li.term{ background-image: url(/include/custom/images/join/join_icon_agree.png); }
+.containerJoinProgress li.info{ background-image: url(/include/custom/images/join/join_icon_infowrite.png); }
+.containerJoinProgress li.success{ background-image: url(/include/custom/images/join/join_icon_complete.png); }
+.containerJoinProgress li.active{ border-left: 1px solid #000; border-right: 1px solid #000; opacity: 1; }
+
+/* �뚯썝媛��� �뚮줈�� */
+.containerJoin { width:760px;  margin:0 auto; text-align: center; }
+.containerJoin .pageTitle{ margin: 30px 0 30px 0; font-size: 22px; letter-spacing: 0;}
+.containerJoin .pageTitle.txtC{ text-align: center; }
+.containerJoin .phoneImage { background: url(/include/custom/images/join/join_icon_phone.png) no-repeat 50% 50%; background-size: 186px 176px; width: 186px; height: 176px; margin: 0 auto; }
+.containerJoin hr { border: none; border-top: 1px solid #E1E0E1; margin: 0; }
+.containerJoin button {padding: 20px 0px; margin:5px 0; width: 100%; border-radius: 5px; border: none; color: #fff; font-weight: 400; }
+.containerJoin button.btnBlack { background: #000; }
+.containerJoin button.btnWhite { background: #FFF; color:#000; border: 2px solid #000; padding: 18px 0; }
+.containerJoin button.authByPhone{ width: 25%; }
+.containerJoin ul.ment { display:inline-block; text-align: left; width: 50%; margin: 30px auto; }
+.containerJoin ul.ment li { margin: 6px 0; }
+
+.containerJoin .termAgree {
+   position: relative;
+   font-size: 1em;
+   text-align: left;
+   margin: 30px 0 20px 0;
+   letter-spacing: -0.1em;
+}
+.containerJoin .termAgree .more{
+	position: absolute;
+	right: 0;
+	top: 0.5em;
+	padding-right: 20px;
+	background: url(/include/custom/images/join/join_icon_arrow_more.png) no-repeat 100% 50%;
+	background-size: 9px 15px;
+}
+.containerJoin .termBox {
+   border: 1px solid #E1E1E1;
+   padding: 20px;
+   margin: 20px 0;
+   background: #F1F1F1;
+   text-align: left;
+   color:#A1A1A1;
+   font-weight: 400;
+   line-height: 1.5em;
+   font-size: 0.8em;
+}
+.containerJoin .termBox strong{ color:#000; font-size: 1.2em; font-weight: 500; }
+.containerJoin .pointImage { background: url(/include/custom/images/join/join_icon_complete_point.png) no-repeat 50% 50%; background-size: 184px 114px; width: 184px; height: 114px; margin: 0 auto; }
+.containerJoin .pointImage.point1000 { background-image: url(/include/custom/images/join/join_icon_complete_point_1000.png) }
+.containerJoin p.ment {
+	margin: 30px 0;
+}
+
+
+
+
+/*
+.containerLogin {width:980px; border-top: 1px solid #555; padding: 40px 0px 30px}
+.containerLogin ul {list-style: none; margin: 0px; width: 50%; float: left; padding: 0px 10%}
+.containerLogin li {list-style: none; padding: 5px 0px; font-size: 13px}
+.containerLogin li label {width: 80px; display: block; float: left; line-height: 22px}
+.containerLogin .txtLogin {text-align: center; font-size: 17px; padding-bottom: 15px}
+.containerLogin .agreeLogin {text-align: center; font-size: 13px; color: #aaa; padding: 30px 0px; border-top: 1px solid #555; margin-top: 30px}
+.containerLogin .agreeLogin a {padding: 0px 10px}
+.containerLogin .spaceTop {margin-top: 10px}
+.containerLogin .borderRight {border-right: 1px solid #ddd}
+.btnBlack {background: #000; padding: 8px 0px; color: #fff; font-weight: 600}
+.btnGray {background: #999; padding: 8px 0px; color: #fff; font-weight: 600}
+*/
+
+
+/* �λ컮援щ땲 */
+.containerCart {width: 980px}
+.containerCart ul {border-top: 1px solid #555; border-bottom: 1px solid #555;margin: 0px; list-style: none; font-size: 14px; clear: both; padding: 0px}
+.containerCart ul li {padding: 7px 10px; clear: both; overflow: hidden}
+.containerCart .marketCart {margin: 10px 0px; color:#888}
+.containerCart .marketCart a {font-size: 18px; font-weight: 500; }
+.containerCart .marketCart span {color:#333; font-weight: 500}
+.containerCart .marketCart img {width:27px; vertical-align: -6px; margin-right: 5px; border-radius: 100% }
+.containerCart .btnMore {float: right; font-size: 13px !important; color: #000; background: #fff; border: 1px solid #000; padding: 3px 10px}
+.containerCart .headerInfo {border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; font-size: 13px; color:#777; overflow: hidden}
+.headerInfo label {display: block; float: left; text-align: center}
+.containerCart .itemInfo {border-bottom: 1px dotted #ccc; position: relative; /* display: table; */ }
+.itemInfo a, .itemInfo div {display:table-cell; text-align: center; vertical-align:middle ; height:75px }
+.itemInfo img {width: 75px}
+.containerCart .cell1 {width:30px; position: relative; z-index: 10;}
+.containerCart .cell2 {width:90px; }
+.containerCart .cell3 {width: 240px; }
+.containerCart .cell4 {width: 140px}
+.containerCart .cell5 {width: 140px}
+.containerCart .cell6 {width: 130px}
+.containerCart .cell7 {width: 140px}
+.containerCart .cell8 {width: 30px; position: relative; z-index: 10;}
+.containerCart .cell8 input { -webkit-appearance: none;    -webkit-border-radius: 0; width:24px; height:24px; text-align: center; padding: 0px; border: 1px solid #000; background: #fff}
+.containerCart .disableLayer { background: rgba(230,230,230,0.8); width: 100%; height: 100% !important; left:0; top:0; position: absolute;  } 
+.containerCart .disableLayer p { position: relative; top: 50%; margin: 0; margin-top: -0.5em; font-weight: bold; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
+    
+.itemInfo .eaCart {width: 22px; text-align: center; border:none; }
+.itemInfo .btnEaCart {width: 24px; height: 24px; border: none; background: #000; font-weight: 800; font-size: 12px; background: #000; color: #fff; border-radius: 24px; text-align: center; padding: 0px;  -webkit-appearance: none; }
+.itemInfo input {vertical-align: middle}
+.itemInfo .btnChangeCart {border: 1px solid #555; background: #fff; font-size: 12px; padding: 2px 3px;    -webkit-appearance: none;    -webkit-border-radius: 0;}
+.containerCart .itemSum { max-width: 600px; margin: 0px auto}
+.itemSum div {float: left; width: 30%; text-align: center; padding: 10px 0px; line-height: 150%}
+.itemSum .mark {width: 5%; line-height: 300%}
+.itemSum span {font-size: 12px; color:#555}
+.containerCart .itemTotal { max-width: 600px; margin: 0px auto; overflow: hidden}
+.itemTotal div {float: left; width: 30%; text-align: center; padding: 10px 0px; line-height: 150%}
+.itemTotal .mark {width: 5%; line-height: 300%}
+
+.btnBoxCart {text-align: center; padding: 50px 0px; }
+.btnBoxCart .bigBtn {width:100%; max-width: 800px; margin:0px auto; display: block}
+.btnOrderWh {background: #fff; border: 1px solid #000; padding: 7px 100px; font-size: 14px; color: #000 !important}
+.btnOrderWh:hover {background: #efefef}
+.btnOrderBk {background: #000; border: 1px solid #000; padding: 7px 100px; font-size: 14px; color: #fff !important}
+.btnOrderBk:hover {background: #333}
+.markL {text-align: center; font-size: 46px}
+.equal {border-bottom: 1px solid #555}
+
+/* 201706 異붽� */
+.anotherOption div {height: 30px !important}
+.containerCart .emptyCart {text-align: center; font-size: 13pt; padding: 70px 10px !important; overflow: hidden; line-height: 200%}
+.emptyCart i {font-size: 20pt}
+
+
+
+
+/* �ㅻ뜑 */
+.containerOrder {width: 980px}
+.midTitle {width: 100%; border-top: 1px solid #555; text-align: center; margin: 20px auto}
+.midTitle span {background: #fff; border: 1px solid #555; display: block; width: 200px; margin:-20px auto 0px auto; padding: 10px 0px; font-size: 12pt}
+.containerOrder ul {border-top: 1px solid #555; border-bottom: 1px solid #555;margin: 0px; list-style: none; font-size: 14px; clear: both; padding: 0px 10px}
+.containerOrder ul li {padding: 8px 10px; clear: both; overflow: hidden}
+.containerOrder .marketOrder {margin: 10px 0px; color:#888; border-bottom: 1px solid #ccc}
+.marketOrder a {font-size: 18px; font-weight: 500; }
+.marketOrder span {color:#333; font-weight: 500}
+.marketOrder small {float:right; font-size: 13px}
+.marketOrder img {width:27px; vertical-align: -6px; margin-right: 5px; border-radius: 100% }
+.containerOrder .itemInfoOrder {line-height: 75px; border-bottom: 1px solid #ccc}
+.itemInfoOrder img {width: 75px; float: left}
+.itemInfoOrder div {padding: 0px 20px}
+.itemInfoOrder .optionOrder {float: left; line-height: 30px; font-size: 13px; padding-top: 5px}
+.itemInfoOrder .optionOrder a {display: block; font-size: 16px}
+.itemInfoOrder .priceOrder {float:right}
+.containerOrder .itemSum {font-size: 16px; color: #777; text-align: right; padding: 10px 20px}
+.containerOrder .itemSum span {padding: 0px 20px}
+.containerOrder .itemSum b {color: #333}
+.containerOrder .itemTotalOrder {padding: 20px; text-align: right; font-size: 18px; margin-bottom: 40px}
+.containerOrder .formPerson {border: none !important; width: 95%;  max-width: 800px; margin: 10px auto 70; font-size: 14px}
+/*.formPerson label {width: 70px; float:left}*/
+.containerOrder input[type='text'] {border:1px solid #555; width:250px; padding: 2px}
+.containerOrder input[type='button'] {background: #000; border: 1px solid #000; padding: 3px 8px; font-size: 12px !important; color: #fff !important; width: 98px; vertical-align: 1px}
+.formPerson .inputLong {width: 100% !important; max-width: 500px}
+.formPerson .minSpace {padding-top:0px}
+.boxPoint {text-align: center; font-size: 18px; padding: 0px 0px 30px; line-height: 240%}
+.boxPoint label {padding-right: 20px; color: #444; font-size: 15px}
+.currencyB {padding: 0px 5px; background: #000; color: #fff ; margin: 0px 8x; font-size: 0.7em; border-radius: 100%}
+.boxPoint small {font-size: 13px; color:#888}
+.finalPrice {width: 100%; max-width: 340px; padding: 30px 0px 50px !important; line-height: 250%; color: #888; border:none !important; margin:0px auto !important; text-align: right; font-size:17px !important}
+.finalPrice label {float:left}
+.finalPrice .big {color:#000; font-weight:500}
+.containerOrder .payMethod {padding: 20px 0px;  text-align: center}
+.payMethod span {padding: 0px 20px}
+.btnOrderCancel {padding: 3px 0px; font-size: 12px !important;  float:right; color:#FF9489 !important}
+.infoOrderDetail {width: 100%; max-width: 700px; padding: 30px 0px 50px !important; line-height: 250%; color: #888; border:none !important; margin:0px auto !important; text-align: right; font-size:17px !important}
+.infoOrderDetail label {float:left; margin-right: 20px}
+.infoOrderDetail .big {color:#000; font-weight:500}
+
+    /* 201706 異붽� */
+    .containerOrder .anotherOptionOrder{ padding-left: 85px ; line-height: 30px}
+    .noData {padding: 60px 0px 80px 0px !important; font-size: 12pt; border:0px !important; margin-bottom:0px !important}
+
+/* �ㅻ뜑 而댄뵆由� */
+.containerOrderComplete {width: 95% !important; max-width: 530px; margin:0px auto}
+.containerOrderComplete div {text-align: center; border:1px solid #444; padding: 20px 0px;  line-height: 150%; word-break: keep-all}
+.containerOrderComplete ul {margin: 0px;  list-style: none; font-size: 14px; padding: 15px}
+.containerOrderComplete ul li {text-align: right; padding: 10px ; clear: both}
+.containerOrderComplete ul label {float: left}
+.containerOrderComplete div big {text-align: center; display: block; font-size: 26px; margin: 13px auto}
+.containerOrderComplete div i {font-size: 42px}
+.containerOrderComplete div b { padding: 3px; border-bottom: 1px solid #888; font-weight: normal}
+.containerOrderComplete span {font-size: 0.7em; background: #000; border-radius: 100%; color: #fff; padding: 0em 0.4em; margin-left: 2px; vertical-align: 0.15em}
+.containerOrderComplete a {width: 100%; color: #fff; background: #000; display: block; text-align: center; margin: 20px auto; padding: 15px 0px}
+.containerOrderComplete a:hover {background: #3F51B5}
+.containerOrder .boxItems {border-bottom:none; border-color:#ccc; max-width: 700px; margin:0pc auto 80px auto}
+
+/* �뚯썝 �뺣낫 愿��� (鍮꾨�踰덊샇 李얘린, �꾩씠�� 李얘린) */
+.containerAccount {
+	width: 760px; margin: 45px auto; text-align: center;
+}
+/*.containerAccount .btnBlack{ width:100%; }*/
+.containerAccount ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.containerAccount ul.choose{
+	margin: 30px 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	border-top: 1px solid #E1E1E1;
+}
+.containerAccount ul.choose li{
+    border-bottom: 1px solid #E1E1E1;
+    height: 4.5em;
+    line-height: 4.5em;
+    text-align: center;
+}
+.containerAccount input[type=radio] {
+	display: none;
+}
+.containerAccount input[type=radio] + label {
+    text-indent: 45px;
+    background: url(/include/custom/images/login/login_icon_radiobtn_n.png) no-repeat 0 50%;
+    background-size: 36px 36px;
+    display: inline-block;
+    min-height: 37px;
+    line-height: 37px;
+    cursor: pointer;
+}
+.containerAccount input[type=radio]:checked + label {
+    background: url(/include/custom/images/login/login_icon_radiobtn_s.png) no-repeat 0 50%;
+    background-size: 36px 36px;
+}
+
+.containerAccount .pageTitle {
+	letter-spacing: 0;
+	margin: 45px 0;
+	font-weight: 400;
+}
+.containerAccount form input[type=password],
+.containerAccount form input[type=number],
+.containerAccount form input[type=email],
+.containerAccount form input[type=text],
+.containerAccount form li button
+{
+    margin: 5px 0;
+}
+
+.containerAccount #certificationPhoneNumber {
+	width: 620px;
+}
+.containerAccount #requestCertification {
+	width: 130px;
+	float: right;
+}
+.containerAccount button.btnWhite {background: #FFF; padding: 18px 0px; color: #000; border: 2px solid #000;  }
+.containerAccount p.ment {
+	margin: 30px 0;
+	font-size: 10pt; color:#4C4C4C;
+	color:#494949;
+	line-height: 1.7em;
+	/*letter-spacing: 0.1em;*/
+}
+.containerAccount p.ment.dot { padding-left: 1.2em; background: url(/include/custom/images/login/login_icon_buret.png) no-repeat 0 .5em; background-size: 5px 5px; }
+
+.containerAccount .pageSubTitle { font-size: 12pt; color: #000; font-weight: 500; margin: 30px 0; }
+.containerAccount hr { border: none; border-top: 1px solid #E1E0E1; margin: 0; }
+.containerAccount .formPerson { margin-top: 60px; margin-bottom:50px; }
+.containerAccount .formPerson button.btnWhite {background: #FFF; padding: 18px 0px; color: #000; border: 2px solid #000;  }
+
+
+.containerAccount .resultMsg { margin: 30px 0; font-size: 18pt; font-weight: 400; text-decoration: underline;  }
+.containerAccount .resultBox { margin: 50px 0; }
+.containerAccount .resultBox p { font-size: 12pt; line-height: 1.4em; }
+.containerAccount div.updateMyInfo { padding:15px 10px; border-top: 1px solid #DFDEDF;  border-bottom: 1px solid #DFDEDF; text-align: left; }
+
+.imageLock { background: url(/include/custom/images/login/login_icon_password_change.png) no-repeat 50% 50%; background-size: 100px 100px; width: 100px; height: 100px; margin: 60px auto; }
+.imageInactive { background: url(/include/custom/images/login/login_icon_pausemember.png) no-repeat 50% 50%; background-size: 100px 100px; width: 100px; height: 100px; margin: 60px auto; }
+
+
+/* 留덉씠�섏씠吏� */
+.containerMypage {width: 980px}
+.tabMypage {overflow: hidden; margin-bottom: 60px}
+ /*.tabMypage a {display: block; width: 16.66%;) */
+.tabMypage a {display: block; width: 20%; float:left; border: 1px solid #999; color: #999; text-align: center; padding: 10px 0px; border-radius: 10px 10px 0 0; font-size: 14px}
+.tabMypage a:hover { border: 1px solid #000; border-bottom: 1px solid #999; color: #000;}
+.tabMypage .tabOn {border:1px solid #000; border-bottom: none; color:#000}
+.tabMypage .tabOn:hover {border-bottom: 1px solid #fff}
+#favor ul {width: 21%; margin:2%; padding: 0px; border:1px solid #ddd; list-style: none; overflow: hidden; font-size: 14px; float:left}
+#favor ul li { text-align: right; padding: 2px 15px 2px 0px}
+#favor img {width: 80px; float:left}
+#favor ul i {color:#FF9489 }
+.txtFavor {font-size: 14px; color:#585858; text-align: center; padding: 20px 0px; margin-bottom: 60px}
+.txtFavor b {font-weight:800; color:#000}
+.txtFavor a {color: #fff; background: #000; padding: 2px 8px; font-size: 12px}
+.txtFavor a:hover {background: #444}
+#favor dl {width: 17%; margin:2% 2% 2% 6%; padding: 0px; border:1px solid #ddd; list-style: none;  font-size: 14px; float:left; }
+#favor dl img {margin-left: -40px; border-radius: 100%}
+#favor dd {padding: 5px 15px 2px 10px; font-size: 13px; color: #666}
+#favor dd a {color: #222}
+#favor dd i {color:#FF9489; float: right}
+.btnBkS {color: #fff !important; background: #000; padding: 2px 8px; font-size: 12px}
+.btnBkS:hover {background: #444}
+#point table {width:100%; max-width: 500px; margin: 30px auto 0px auto; font-size: 13px; border-top: 1px solid #999;  border-bottom: 1px solid #999}
+#point table caption {display: none;}
+#point th { border-bottom: 1px solid #999; font-weight: 300}
+#point td {text-align: center; padding: 4px}
+.txtPoint {font-size: 13px; color: #888; text-align: center; margin-bottom: 70px}
+#history .boxOrder {padding: 30px 0px; border-bottom: 1px dotted #ccc; overflow: hidden; text-align: center; margin-bottom: 30px}
+#history {padding-bottom: 40px}
+.boxOrder .numOrder {text-align: center; font-size: 18px; padding: 10px 0px}
+.numOrder span {color: #999; padding: 0px 20px}
+.numOrder a {margin-left: 20px;}
+.boxOrder ul {width: 31%; margin: 20px 1% 0px 1%; border: 1px solid #999; padding: 6px; list-style: none; display: inline-block; height: 142px}
+.boxOrder ul li {padding:4px 0px 4px 5px; font-size: 13px; overflow: hidden; text-align: left}
+.boxOrder ul img {float: left; width: 64px}
+.boxOrder li span {float: right; text-align: center; padding: 2px 10px}
+.boxOrder .itemName {font-size: 14px}
+.boxOrder .itemName span {background: #d8d8d8;  font-size: 13px}
+.boxOrder .btnsOrder {clear: both; padding: 0px;text-align: center; font-size: 13px; padding: 5px 0px}
+.boxOrder .btnsOrder a.largeBtn {display: block; padding: 5px 0px; border: 1px solid #888}
+.boxOrder .btnsOrder a.smallBtn {display: block; padding: 5px 0px; border: 1px solid #888; width: 49%; float: left; margin-right: 1%}
+.boxOrder .btnsOrder a.xsmallBtn {display: block; padding: 5px 0px; border: 1px solid #888; width: 32%; float: left; margin-right: 1%}
+.boxOrder .btnsOrder a:hover {background: #eee}
+.boxOrder .sellerInfo {margin: 5px 0px 0px; font-size: 13px; text-align: center; color: #777;  clear: both; padding: 0px}
+.boxOrder .txtCancel {text-align: center; padding: 15px 0px; width: 100%; background: #eee; margin: 2px 0px 0px; clear: both}
+.boxOrder .txtPrice {text-align: center; color: #888; font-size: 13px; padding-top: 15px}
+#qna {text-align: center; font-size: 13px; line-height: 180%; margin-bottom: 60px}
+#qna .radioQna { padding: 0px 0px 10px }
+#qna .radioQna input {padding-left: 20px}
+#qna .radioQna label {padding-right: 20px}
+#qna ul {border: 1px solid #555; padding: 20px; list-style: none; }
+#qna ul li {text-align: center; padding: 3px 0px}
+#qna ul li label {color:#888; }
+#qna ul .mark { padding:15px 0px 0px ; font-size: 20px ; line-height: 100%}
+#qna ul li span {padding: 3px 10px; background: #ddd; color:#444; margin:10px 0px}
+#cs {text-align: center; }
+#cs .msg {max-width: 500px;margin: 10px auto; line-height: 180% ; clear: both; text-align: left; font-size: 9.5pt; padding: 10px 15px}
+#cs .info label {color: #444; margin-right: 5px}
+#cs .info {padding-bottom: 50px; text-align: left; max-width: 500px; margin:0px auto; font-size: 10pt}
+/* 2017-06 異붽� */
+.subhead_mypage {max-width: 500px; text-align: left; margin: 10px auto; font-size: 11pt; padding: 0px 15px}
+a.btnGoMyorder {background: #888; color: #fff; margin: 10px auto; width: 100px; border-radius: 15px; font-size: 9pt; padding: 5px 15px}
+#cs .midline {margin:50px auto; max-width: 500px; border-top:1px solid #ccc}
+#cs .fa-comment {color:#ffc30c}
+#cs .info a {float: right; background: #888; color: #fff;border-radius: 15px; font-size: 8.5pt; padding: 0px 15px; line-height: 160%}
+#cs .info div {padding: 8px 15px}
+
+
+/* FAQ */
+.containerFaq {max-width: 980px}
+
+.containerFaq dl {margin:20px 10px; clear: both; padding:0px 10px}
+.containerFaq dt {cursor:pointer; font-size: 10pt}
+.containerFaq dt .arrowDown {display: none; color:#3F51B5}
+.containerFaq dt .arrowRight {color:#FF9489 }
+.containerFaq dd {background: #efefef; padding: 15px; margin:5px 0px 20px 0px; line-height: 160%; font-size: 10pt; font-weight: normal}
+.containerFaq dt i {}
+
+
+
+/* �명꽣 */
+#footer {background:#f3f3f3; margin-top: 30px; padding: 0px;}
+.containerFooter {}
+.containerFooter ul {width: 33%; float: left; border-right: 1px solid #ccc; text-align: center; list-style: none; padding: 0px; font-size: 13px; overflow: hidden; margin: 30px 0px}
+.containerFooter ul li {padding: 6px 0px; overflow: hidden; display: block}
+.containerFooter ul:nth-child(3) {border:none}
+.toAppFooter {padding: 10px 0px}
+.toAppFooter i {color:#ffaa00}
+.toAppFooter .txtToApp {font-size: 14px; padding: 7px 0px ; margin-bottom: 10px}
+.toAppFooter .txtToApp span {padding: 5px 20px; border-bottom: 1px solid #ccc}
+.toAppFooter .starToApp {width: 100%; max-width: 280px; margin: 0px auto ; line-height: 25px; clear: both; padding-top: 5px}
+.toAppFooter .starToApp i {float:left;padding-top: 6px; font-size: 14px}
+.toAppFooter .starToApp img {float:right; vertical-align: 10px}
+.aboutFooter {}
+.aboutFooter li {line-height: 170%}
+.aboutFooter .trophy i {font-size: 45px; position: relative; color:#ffaa00}
+.aboutFooter .trophy i span {color:#fff; font-size: 25px; position: absolute; left:33%; top:10%}
+.aboutFooter .txtAbout {font-size: 14px; line-height: 160%;}
+.aboutFooter .btnA, .aboutFooter .btnB {padding: 3px 20px; }
+.aboutFooter .btnA {border: 1px solid #444; color: #444}
+.aboutFooter .btnB {color:#fff; background: #143071; border: 1px solid #143071}
+.aboutFooter .btnA:hover , .aboutFooter .btnB:hover {color: #FFF; background: #000; border: 1px solid #000}
+.csFooter {font-size: 13px; color:#222; font-weight: 300}
+.csFooter .txtCs { background: #ddd; padding: 4px; width: 90%; max-width: 280px; margin: 0px auto}
+.csFooter .contactCs {font-size: 12px; line-height: 150%}
+.csFooter .contactCs label {color:#666}
+.btnsAbout a {padding: 0px 7px}
+.btnsAbout i {margin-left: 5px}
+.btnsAbout a:hover {color:#000}
+#footer2 {text-align: center; padding: 15px 30px; font-size: 13px; color:#777; line-height: 160%}
+#footer2 span {color:#aaa; padding: 0px 10px}
+
+/* 201706 異붽� */
+.footerSec1,.footerSec2, .footerSec3 {float: left; padding: 0px 30px; margin: 30px 0px; font-size: 9.5pt; line-height: 190%; color:#666; border-right:1px solid #ccc; height:155px}
+.footerSec1 {width: calc( (100% - 220px) * 0.45 ); line-height: 210%}
+.footerSec2 {width: calc( (100% - 220px) * 0.55 )}
+.containerFooter {max-width: 995px}
+.containerFooter > div:nth-child(3) {border:0px}
+#footer h3 {font-size: 10.5pt; font-weight: normal; color:#000; margin-top: 0px}
+#footer h3 i {color: #666; margin-right: 5px}
+.footerSec1 span {color:#888}
+.footerSec2 img {width: 45px; margin-bottom: 10px}
+.footerSec2 a {text-align: center; display: block}
+.footerSec2 div {overflow: hidden}
+.footerSec2 div a {float: left; width: 37.5%; font-size: 8pt; border-right: 1px solid #ccc}
+.footerSec2 div > a:first-child {width: 25%}
+.footerSec2 div > a:last-child {border:0px}
+a.btnFooterApp {background: #888; color: #fff; margin: 10px auto; width: 100px; border-radius: 15px; /*font-size: 8pt*/}
+.footerSec3 {padding-left: 40px; width: 220px}
+.footerSec3 a {display: block; padding-left: 20px}
+.footerSec3 div {padding-left: 20px; padding-top: 15px}
+.footerSec3 div a {display: inline; padding-right: 15px; padding-left: 0px; }
+.footerSec3 div i {font-size: 20pt; padding-top: 10px}
+#footer2 {font-size: 9.5pt}
+
+
+
+/* �대컮�� */
+.containerAbout {color:#fff; word-break: keep-all}
+.containerAbout h3 {font-size: 22px}
+.containerAbout h4 {font-size: 18px; margin:15px 0px}
+.containerAbout #no1 {text-align: center; background: #bcd1f0 url(/include/base/images/bg_about_1.jpg) center center; padding: 40px 20px 55px 20px; }
+.containerAbout ul {margin:0px; padding: 0px}
+.containerAbout li {width: 50%; float: left; text-align: center; list-style: none; padding-top: 40px ;  height:208px}
+.containerAbout li i {font-size: 40px}
+.containerAbout #everydayNew {background:#ff6946 url(/include/base/images/pattern_1.png)}
+.containerAbout #best {background:#f99f02 url(/include/base/images/pattern_2.png)}
+.containerAbout #filter {background:#518b90 url(/include/base/images/pattern_3.png)}
+.containerAbout #favor {background:#3f51b5 url(/include/base/images/pattern_1.png)}
+.containerAbout #payment {background:#27779c url(/include/base/images/pattern_2.png)}
+.containerAbout #mobile {background:#cc4a6e url(/include/base/images/pattern_3.png); padding-top: 30px}
+.containerAbout #mobile i {font-size:50px}
+
+/* 怨듭궗以� */
+.containerMaintenance {text-align: center; height: 462px}
+.containerMaintenance font {line-height: 140%; font-size: 32px; font-weight: bold}
+.containerMaintenance .topline i {font-size: 120px}
+.containerMaintenance .topline img { vertical-align: -80px; margin: 30px}
+.containerMaintenance h1 {line-height: 140%}
+.containerMaintenance .bottomline {font-size: 25px}
+.containerMaintenance .bottomline i {font-size: 40px; display: block}
+
+
+
+@media screen and (min-width: 980px) and (max-width: 1344px) {
+    /*怨듯넻 */
+    .containerFlexi  {width: 980px;}
+    .gnbBox {margin-left: 0px}
+    .gnbBox a {padding:3px 7px; margin: 0px 13px}
+    .gnbBox span { padding: 3px 10px; }
+    #sliderMenu ul  { width: 10000px; }
+    #sliderMenu ul li { width: auto; }
+    .searchBox { font-size: 13px; float:left; padding-left: 20px; padding-top:5px}
+    .searchInput {width: 120px}
+    .containerGnb a {margin:0px 7px}
+
+    /* �� */
+    .containerCateIcon {padding:30px 0; }
+
+    /* 留덉폆 */
+    .containerMarketList ul img  {margin-top: 20px}
+
+    /* �뚯뀥 */
+    .containerSocialList ul {width: 18%}
+    .containerSocialDetail ul {width: 25%;  margin:15px 0px;}
+
+
+}
+
+/* 紐⑤컮�� */
+@media screen and (max-width: 979px) {
+    #jssor_2 {display: none}
+    #jssor_1 {display: block}
+
+    /* 怨듯넻 */
+    .forPc {display: none}
+    .forPC {display: none}
+    .forMobile {display: block}
+    #gnbMobile {position: relative}
+    .containerFlexi {overflow: hidden; margin: 0px auto; width: 100%;}
+    #topbanImg {max-width: 600px; margin:0px auto}
+    .midTitle span {width: 150px; }
+    .iconMobileMenu {position: absolute; left: 13px; top: -40px; font-size: 15px}
+    .iconMobileCart {position: absolute; right: 13px; top: -30px; font-size: 15px}
+    .iconMobileFavor {position: absolute; right: 53px; top: -30px; font-size: 15px}
+    .iconMobileMy {position: absolute; right: 80px; top: -30px; font-size: 15px}
+    .iconMobileCart span {font-size: 11px;  color:#fff; background: #3F51B5; border-radius: 100%; padding: 0px 5px; margin-left: 2px}
+    .gnbBoxMobile {text-align: center; overflow: hidden}
+    .gnbBoxMobile a {width: 16.66%; float: left; font-size: 12px;  padding: 15px 0px 20px 0px;  border-bottom: 1px solid #ddd;}
+    .gnbBoxMobile a.on {border-bottom: 1px solid #000}
+    .gnbBox2Mobile {position: fixed; bottom: 0px; width: 100%; background: #fff; padding: 15px 0xp; background: #000; z-index: 999}
+    .gnbBox2Mobile a {width: 20%; float: left; font-size: 12px; padding: 15px 0px 20px 0px; color: #fff; text-align: center}
+    .gnbBox2Mobile a.on {background: #3F51B5}
+    .gnbBox3Mobile {}
+    /* 2017-06 異붽� */
+    .containerLogo { text-align: center}
+    .iconMobileMenu {top: 20px; }
+    .iconMobileCart {/*top: 20px;*/ top:14px; }
+    .containerGnbtab {margin-bottom:30px}
+
+    /* 紐⑤컮�쇱뿉�� �� 苑됱갭 */
+    .containerGnbtab a { width:50%; text-align:center; }
+
+
+    /* �섏씠吏� ���댄� & 釉뚮젅�쒗겕�� */
+    .pageTitle {letter-spacing: 5px; font-size: 18px;}
+    .pageTitle small {font-size: 14px;}
+    .breadCrumb {text-align: center; font-size: 13px; color:#c5c5c5; padding: 10px}
+    .breadCrumb span {padding: 0px 7px}
+
+    /* �� */
+    .titleSectionHome {text-align: center; letter-spacing: 10px; font-size: 17px; color: #3f3f3f; padding: 30px 0px}
+    .containerCateIcon {padding:30px 0px;}
+    .containerCateIcon ul {width:33%; }
+    .containerItemListHome {width: 95%; margin-left: auto; margin-right: auto}
+    .containerItemListHome ul {width:48%;  margin:10px 1% 20px 1%; float: left}
+    /*.containerItemListHome ul:nth-child(5) {display: none}*/
+    .btnMoreHome {width:200px;}
+    .containerMarketHome {padding:30px 0px; width: 95%}
+    .containerMarketHome ul {width:48%; margin:20px 1%; }
+    .divMarketInfo {padding:5px 10px 0px 10px; font-size:14px}
+    .profileMarketInfo {margin-top: 8px}
+    .divMarketInfo i {display: none}
+    .divMarketInfo p {font-size:12px; }
+    /*.containerMarketHome ul:nth-child(5) {display: none}*/
+
+    /* �꾩씠�� 由ъ뒪�� */
+    .containerItemList {width: 95%}
+    .containerItemList ul {width:48%;  margin:10px 1%; padding-bottom: 30px}
+
+    /* �꾩씠�� �곸꽭 */
+    .containerItemDetail {width: 98%; font-size: 13px}
+    .imgItemDetail {width:100%; padding:2%; max-width: 500px; margin: 0px auto !important; float:none}
+    .infoItemDetail {width:100%; padding:2%; }
+    .tabItem {padding:20px 0px 0px 0px; text-align: center; border-bottom: 1px solid #000; font-size: 13px; overflow: hidden}
+    .tabItem a {display: block; width: 25%; float:left; padding:10px 0px;  letter-spacing: 0px; color:#999; border: 1px solid #ccc; border-bottom: none}
+    .tabItem a.on {color:#fff; font-size: 13px; background: #000; border: 1px solid #000}
+
+
+
+    /*.containerLogin ul { margin-bottom:30px; width: 100%; float: none; padding: 0px 20px 40px ; border-bottom: 1px dotted #ccc}
+    .containerLogin input[type='text'], .containerLogin input[type='password'] {width:100%;}
+    */
+
+    /* 留덉폆 */
+    .containerMarketList ul {width: 95%; float: none; clear: both; margin:20px auto; max-width: 400px}
+    .containerMarketList ul img {width: 100px; margin-top:10px}
+    .containerMarketProfile {background-repeat: repeat-x; background-size: auto 100%; margin: 0px auto;  overflow: hidden; font-size: 13px}
+    .btnMarketProfile a {display: block; width: 90%; margin: 10px auto}
+
+    /* �뚯뀥 */
+    .containerSocialList ul {width: 31%; margin: 0px 1%}
+    .containerSocialDetail ul {width: 33%; margin: 0px }
+
+    /* �대깽�� */
+    .containerEventList ul {width: 100%; max-width: 480px; margin: 20px auto; float: none}
+    .containerReply dt {width:15%;max-width: 80px ; }
+    .containerReply dt img {width: 100%}
+    .containerReply dd {float: none; display: inline-block; width: 80%}
+
+    /* �λ컮援щ땲 */
+    .containerCart ul {margin:0px 10px}
+    .containerCart .marketCart {margin: 10px 0px; color:#888; font-size: 13px;  border-bottom: 1px dotted #ccc; }
+    .containerCart .marketCart a {font-size: 13px;  }
+    .containerCart .marketCart img {width:25px; }
+    .containerCart .btnMore {margin: 7px 0px; float: right; font-size: 12px !important;  padding: 1px 3px}
+    .containerCart .itemInfo {line-height: 25px; position: relative; display: block; overflow: hidden}
+    .containerCart .itemInfo a, .containerCart .itemInfo div {float: left; overflow: hidden; display: block; height: inherit}
+    .itemInfo img {width: 90%}
+    /* �곹뭹 泥댄겕諛뺤뒪 */
+    .containerCart .cell1 {
+		/*position: absolute;*/
+		/*left: 8px; */
+		/*top: 0px*/
+		position:relative;
+		padding:46px 0 0 0;
+	}
+	/* �곹뭹 �대�吏� */
+    .containerCart .cell2 {
+    	/*width:25%;*/
+    	width: 34%;
+    }
+    .containerCart .cell3 {
+    	/*width: 75%;*/
+    	width: 52%;
+    	text-align: left;
+    	padding-left: 5px;
+    	padding-right: 35px;
+    }
+    /* 而щ윭 */
+    .containerCart .cell4 {
+    	width: 50%;
+    	text-align: left;
+    	/*padding-left: 5px;*/
+    	padding-left: 45px;
+    	clear: both
+    }
+    /* 二쇰Ц 媛�寃� */
+    .containerCart .cell5 {
+    	width: 50%;
+    	text-align: right;
+    	padding-left: 5px;
+    }
+    /* 二쇰Ц �섎웾蹂�寃� 踰꾪듉*/
+    .containerCart .cell6 {
+    	width: 50%;
+    	text-align: left;
+    	/*padding-left: 10px;*/
+    	padding-left: 45px;
+    	clear: left
+    }
+    .containerCart .cell7 {
+    	width: 50%;
+    	text-align: right;
+    	float:right
+    }
+    .containerCart .cell8 {
+    	position: absolute;
+    	right: 10px;
+    	top: 10px;
+    	z-index: 10;
+    }
+    .containerCart .itemSum span {display: none}
+    .btnBoxCart a {display: block; padding: 10px 0px; width: 90%; clear: both; margin: 10px auto}
+    .itemInfo .anotherOption {height: inherit !important}
+    .itemInfo .anotherOption .cell5 {width: 100% !important}
+
+    /* 二쇰Ц */
+    .containerOrder .itemInfoOrder {line-height: inherit}
+    .marketOrder {font-size: 14px}
+    .marketOrder a {font-size: 14px}
+    .marketOrder img {width: 20px}
+    .containerOrder ul { margin: 0px 10px}
+    .marketOrder small { clear: both; float: none; display: block; text-align: right}
+    .itemInfoOrder img {width: 50px}
+    .itemInfoOrder .optionOrder {padding: 0px 0px 0px 20px;line-height: 180%; width: calc( 100% - 50px)}
+    .itemInfoOrder div {padding: 0px 8px}
+    .containerOrder .itemSum {font-size: 14px; text-align: right; padding: 10px }
+    .containerOrder .itemSum span {padding: 0px 10px}
+    .containerOrder .itemSum b {color: #333}
+    .itemInfoOrder .priceOrder { padding-top: 15px}
+    .formPerson {}
+    .containerOrder input[type='text'] {width: 50%}
+    .containerOrder input[type='button'] {padding: 2px ; font-size: 12px; width: 75px; letter-spacing: -1px}
+    .containerOrder .formPerson {width: 100%}
+    .formPerson label {width: 55px}
+    .payMethod span {padding: 0px 3px; font-size: 13px}
+    .btnBoxCart .bigBtn {width: 95%; }
+
+    /* 201706 異붽� */
+    .containerOrder .anotherOptionOrder{ padding-left: 60px ;}
+
+    /*留덉씠�섏씠吏� */
+    .tabMypage a {font-size: 12px; border-radius: 0px}
+    #favor ul {width: 80%; margin: 20px auto; float: none}
+    .txtFavor {margin-top: 0px; padding:0px 20px; white-space:normal; word-break: keep-all}
+    .txtFavor a {display: block; margin: 10px 20px; padding: 10px 0px }
+    #favor dl {width: auto; float: none; height : 70px; margin: 10px 30px 10px 60px}
+    #favor dl dd {margin-left: 30px}
+    #favor img {width:  70px}
+    .boxOrder ul {float: none; width: 95%; margin: 10px auto}
+    #history .boxOrder {padding: 10px 10px 30px}
+    .boxOrder .numOrder {font-size: 14px}
+    .numOrder span {padding: 0px 7px}
+    .numOrder a {margin-left: 10px}
+    #qna ul {width: 90%; margin: 10px auto}
+    #qna .radioQna {padding: 10px 0px}
+
+    /* �대컮�� */
+    .containerAbout li {width: 100%; float: none;height:250px; padding: 50px 20px 0px; }
+
+    /* �명꽣 */
+    .containerFooter ul {width: 90%; float: none; border-right: none; border-bottom: 1px solid #ccc; padding:25px 0px;clear:both; margin: 0px auto; }
+    #footer2 {margin-bottom: 50px}
+
+    /* �좎�蹂댁닔 */
+    .containerMaintenance {text-align: center; word-break: keep-all}
+    .containerMaintenance .topline i {font-size: 65px}
+    .containerMaintenance .topline img { vertical-align: -40px; margin: 20px; width: 110px}
+    .containerMaintenance h1 {line-height: 120%; margin: 20px 25px; word-break: keep-all !important }
+    .containerMaintenance .bottomline {font-size: 18px}
+    .containerMaintenance .bottomline i {font-size: 30px; display: block}
+
+    .containerRealName {width: 100%;}
+}
+
+/* 201706 異붽� */
+@media screen and (max-width: 900px) {
+    .footerSec1,.footerSec2, .footerSec3 {float:none; width: 95%;  margin:0px auto; border:0px; padding: 20px 0px; border-bottom: 1px solid #ccc; height: inherit;text-align: center }
+    .footerSec3 a {padding-left: 0px}
+    .footerSec2 div {max-width: 300px; margin:auto}
+    .footerSec3 div {padding-left: 0px; }
+    .footerSec3 div a {padding: 0px 8px}
+    .footerSec3 .brandi-sns {
+        padding-top: 28px;
+    }
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+	.containerLogo.noMenu { margin:30px auto 20px auto;  }
+    .containerLogin, .containerJoin, .containerAccount { font-size: 2vw;  }
+    /* 濡쒓렇�� */
+    .containerLogin { width:100%; }
+    .containerLogin button.half {width: 100%; }
+    .containerLogin button.btnFacebook { text-align: center; text-indent: 0; }
+    .containerLogin button.btnGooglePl { text-align: center; text-indent: 0; }
+    .containerLogin form.simpleForm input[name=brandiId] { margin-bottom: 0;  border-radius:5px 5px 0 0;  }
+    .containerLogin form.simpleForm input[name=brandiPassword] { margin-top: -1px; border-radius:0 0 5px 5px; }
+    .containerHeader .pageTitle{ margin: 20px 0 20px 0; font-size: 1.2em; }
+
+    /* �뚯썝 媛��� �� 怨듯넻 */
+    form.simpleForm ul,
+    form.simpleForm .pageSubTitle,
+    form.simpleForm p.ment,
+    form.simpleForm .btns
+    { margin-left: 3%; margin-right: 3%; }
+    form.simpleForm p.ment { margin-left: 4%; margin-right: 4%; }
+    form.simpleForm button.width200 { width: 100%; }
+    form.simpleForm button{ margin: 0.15em 0; }
+    form.simpleForm button.half {width: 100%; }
+
+    form.simpleForm input[type=password],
+    form.simpleForm input[type=number],
+    form.simpleForm input[type=email],
+    form.simpleForm input[type=text] {
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	}
+    form.simpleForm input[type=checkbox] + label {
+        width: 100%;
+    }
+
+    form.simpleForm input[type=password], form.simpleForm input[type=text], form.simpleForm input[type=email], form.simpleForm input[type=number] {
+        height: 50px;
+    }
+    form.simpleForm button {
+        padding: 15px 0px;
+    }
+    
+    .containerAccount .formPerson button.btnWhite,
+    form.simpleForm button.btnWhite {
+        padding: 13px 0px;
+    }
+
+    .containerJoin .pointImage {
+       /*width: 147px;
+       height: 91px;*/
+       background-size: 100% 100%;
+    }
+    .containerJoin .termAgree, .containerJoin .termBox {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    /* �뚯썝 媛��� */
+    .containerJoinProgress { width:100%; height: auto; position: relative; margin-top: 30px; }
+    .containerJoinProgress:before { content: ""; display: block; padding-top:21%;  }
+    .containerJoinProgress ol{ position: absolute; top:0; left:0;  width: 100%; height: 100%; }
+    .containerJoinProgress li{ width:25%; float:left; background-size: 45% 45%; height: 100%;  font-size: 3vw; padding-top:14.5%; }
+    /*.containerJoinProgress li{ width:25%; position: absolute; top:0; left:0;  float:left; background-size: 42px 32px; }*/
+    .containerJoin  { width:100%; }
+    .containerJoin ul.ment{ width: 100%; }
+    .containerJoin button.authByPhone{ width: 100%; }
+
+    /* �꾩씠�� / 鍮꾨�踰덊샇 李얘린 */
+    .containerAccount { width:100%; margin-top:30px; }
+    .containerAccount ul.choose li{ text-align: left; padding: 0 1em; }
+    .containerAccount #certificationPhoneNumber {
+        width: -webkit-calc(80% - 10px);
+        width:    -moz-calc(80% - 10px);
+        width:         calc(80% - 10px);
+    }
+    .containerAccount #requestCertification{ width: 20%; }
+    .containerAccount div.updateMyInfo { padding-left:3%; padding-right: 3% }
+    .containerAccount .formPerson { margin-top: 30px; margin-bottom: 30px; }
+
+    .containerAccount p.ment,
+    .containerAccount .pageSubTitle { margin-top: 15px; margin-bottom:  15px; margin-left: 0.1em; }
+
+    .containerAccount ul.choose li label{
+        width: 100%;
+    }
+
+
+}
+
+/* 20170823 異붽� - �뚯썝 媛��� �쇰쭔 ����  */
+@media screen and (max-width: 600px) {
+    .containerLogin, .containerJoin, .containerAccount { font-size: 3vw;  }
+}
+@media screen and (max-width: 500px) {
+    .containerLogin, .containerJoin, .containerAccount { font-size: 4vw;  }
+}
+
+/* /紐⑤컮�� */
